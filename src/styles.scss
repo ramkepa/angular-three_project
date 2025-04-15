@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+// html,body {
+//   overflow: hidden;
+ 
+// }
+html{
+  background: #1e1a20;
+}
+.webgl{
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+.back-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  // background-color: #007bff;
+  color: #201b1b;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 1rem 0;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}

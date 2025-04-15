@@ -1,0 +1,18 @@
+<div class="back-button">
+    <button (click)="goHome()" class="back-button">Back to Home</button>
+</div>
+<div class="flip-card-wrapper">
+    <div class="card-container" [@flipState]="flip" (click)="toggleFlip()">
+      <div class="card-face card-front">
+        <h1>Profile Card</h1>
+        <h2>Naresh kushmakar</h2>
+        <p>Webgl Developer</p>
+      </div>
+
+      <div class="card-face card-back">
+        <h2>Contact Info</h2>
+        <p>Email: nareshkushmkar@gmail.com</p>
+        <p>Phone: 8076245211</p>
+      </div>
+    </div>
+  </div>

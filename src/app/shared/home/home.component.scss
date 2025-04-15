@@ -1,0 +1,69 @@
+.navbar {
+    background-color: #343a40;
+    padding: 1rem;
+  
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+  
+    li {
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+  
+        &.active {
+          color: #ffcc00;
+          border-bottom: 2px solid #ffcc00;
+        }
+  
+        &:hover {
+          color: #ffcc00;
+        }
+      }
+    }
+  }
+  .currency-card {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    .top {
+      text-align: center;
+      h2 {
+        margin: 0;
+      }
+      p {
+        margin: 0.5rem 0;
+        color: #555;
+      }
+    }
+  
+    .middle {
+      margin-top: 1rem;
+      h3 {
+        text-align: center;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+  
+        th, td {
+          padding: 8px;
+          border: 1px solid #ddd;
+          text-align: left;
+        }
+  
+        th {
+          background-color: #343a40;
+          color: #fff;
+        }
+      }
+    }
+  }

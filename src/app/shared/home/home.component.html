@@ -1,0 +1,40 @@
+<nav class="navbar" >
+    <ul>
+      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/product/123" routerLinkActive="active">Product</a></li>
+      <li><a routerLink="/threed" routerLinkActive="active">3D Scene</a></li>
+      <li>
+        <button
+        [@expandOnHover]="isHovering ? 'expanded' : 'normal'"
+        (mouseenter)="isHovering = true"
+        (mouseleave)="isHovering = false"
+      >
+        Expand Button
+      </button>
+    </li>
+    </ul>
+  </nav>
+
+  <div class="currency-card" *ngIf="currencyData">
+    <div class="top">
+      <h2>Base: {{ currencyData.base }}</h2>
+      <p>Date: {{ currencyData.date }}</p>
+    </div>
+    <div class="middle">
+      <h3>Exchange Rates</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Currency</th>
+            <th>Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of currencyData.rates | keyvalue">
+            <td>{{ item.key }}</td>
+            <td>{{ item.value }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

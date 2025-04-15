@@ -1,4 +1,13 @@
-# GrassPlaygroundApp
+# PlaygroundApp
+   
+run command "ng serve" 
+for build "ng build"
+"three": "^0.158.0",
+"animejs": "^4.0.1",
+"lil-gui": "^0.20.0", these library use 
+install npm before run the code 
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
 
